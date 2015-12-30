@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <CoreData+MagicalRecord.h>
+#import "News.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,31 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSLog(@"%@",NSHomeDirectory());
+    //创建一个数据库
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Robin.db"];
+    News *new = [News MR_createEntity];
+    new.name = @"新浪新闻";
+    //把数据保存到数据库
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    
+    NSArray *allNews = [News MR_findAll];
+    
+    for (News *new in allNews) {
+        NSLog(@"%@",new.name);
+    }
+    
+    NSLog(@"%@",allNews);
+    
+    //查询某个属性
+    NSArray *allSinaNews = [News MR_findByAttribute:@"name" withValue:@"新浪新闻"];
+    for (News *new in allSinaNews) {
+        NSLog(@"新浪 == %@",new.name);
+        new.name = @"腾讯新闻";
+    }
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    
     return YES;
 }
 

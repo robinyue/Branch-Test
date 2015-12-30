@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C53CF3ADFD4E02B6C9B066A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 648BBC20833197633E52C654 /* libPods.a */; };
 		BCEC69501C103CD200E16F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC694F1C103CD200E16F2C /* main.m */; };
 		BCEC69531C103CD200E16F2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69521C103CD200E16F2C /* AppDelegate.m */; };
 		BCEC69561C103CD200E16F2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69551C103CD200E16F2C /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		BCEC695E1C103CD200E16F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC695C1C103CD200E16F2C /* LaunchScreen.storyboard */; };
 		BCEC69691C103CD200E16F2C /* CoreData_MagicalRecordDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69681C103CD200E16F2C /* CoreData_MagicalRecordDemoTests.m */; };
 		BCEC69741C103CD200E16F2C /* CoreData_MagicalRecordDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69731C103CD200E16F2C /* CoreData_MagicalRecordDemoUITests.m */; };
+		BCEC69831C103E3300E16F2C /* Robin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69811C103E3300E16F2C /* Robin.xcdatamodeld */; };
+		BCEC69941C10459700E16F2C /* News+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69911C10459700E16F2C /* News+CoreDataProperties.m */; };
+		BCEC69951C10459700E16F2C /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEC69931C10459700E16F2C /* News.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		648BBC20833197633E52C654 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC694B1C103CD200E16F2C /* CoreData-MagicalRecordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreData-MagicalRecordDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC694F1C103CD200E16F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCEC69511C103CD200E16F2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		BCEC696F1C103CD200E16F2C /* CoreData-MagicalRecordDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreData-MagicalRecordDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEC69731C103CD200E16F2C /* CoreData_MagicalRecordDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreData_MagicalRecordDemoUITests.m; sourceTree = "<group>"; };
 		BCEC69751C103CD200E16F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEC69821C103E3300E16F2C /* Robin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Robin.xcdatamodel; sourceTree = "<group>"; };
+		BCEC69901C10459700E16F2C /* News+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "News+CoreDataProperties.h"; sourceTree = "<group>"; };
+		BCEC69911C10459700E16F2C /* News+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "News+CoreDataProperties.m"; sourceTree = "<group>"; };
+		BCEC69921C10459700E16F2C /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		BCEC69931C10459700E16F2C /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		DA5EB32FC1370681879F6E3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F53CA7BF52DFF87B9D56EC3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C53CF3ADFD4E02B6C9B066A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEDD8EB55C94D09F25FC92CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				648BBC20833197633E52C654 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCEC69421C103CD200E16F2C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,8 @@
 				BCEC69671C103CD200E16F2C /* CoreData-MagicalRecordDemoTests */,
 				BCEC69721C103CD200E16F2C /* CoreData-MagicalRecordDemoUITests */,
 				BCEC694C1C103CD200E16F2C /* Products */,
+				CF0D7492FBBF816827A9B10D /* Pods */,
+				AEDD8EB55C94D09F25FC92CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +124,16 @@
 		BCEC694D1C103CD200E16F2C /* CoreData-MagicalRecordDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BCEC69901C10459700E16F2C /* News+CoreDataProperties.h */,
+				BCEC69911C10459700E16F2C /* News+CoreDataProperties.m */,
+				BCEC69921C10459700E16F2C /* News.h */,
+				BCEC69931C10459700E16F2C /* News.m */,
 				BCEC69511C103CD200E16F2C /* AppDelegate.h */,
 				BCEC69521C103CD200E16F2C /* AppDelegate.m */,
 				BCEC69541C103CD200E16F2C /* ViewController.h */,
 				BCEC69551C103CD200E16F2C /* ViewController.m */,
 				BCEC69571C103CD200E16F2C /* Main.storyboard */,
+				BCEC69811C103E3300E16F2C /* Robin.xcdatamodeld */,
 				BCEC695A1C103CD200E16F2C /* Assets.xcassets */,
 				BCEC695C1C103CD200E16F2C /* LaunchScreen.storyboard */,
 				BCEC695F1C103CD200E16F2C /* Info.plist */,
@@ -140,6 +168,15 @@
 			path = "CoreData-MagicalRecordDemoUITests";
 			sourceTree = "<group>";
 		};
+		CF0D7492FBBF816827A9B10D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA5EB32FC1370681879F6E3F /* Pods.debug.xcconfig */,
+				F53CA7BF52DFF87B9D56EC3C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCEC69781C103CD200E16F2C /* Build configuration list for PBXNativeTarget "CoreData-MagicalRecordDemo" */;
 			buildPhases = (
+				81764519E5B6DEB9F6950586 /* Check Pods Manifest.lock */,
 				BCEC69471C103CD200E16F2C /* Sources */,
 				BCEC69481C103CD200E16F2C /* Frameworks */,
 				BCEC69491C103CD200E16F2C /* Resources */,
+				28FF8D529A48A40BA0C41A26 /* Embed Pods Frameworks */,
+				69CDCFFF1F3FB0134BAF9A5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +305,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28FF8D529A48A40BA0C41A26 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69CDCFFF1F3FB0134BAF9A5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81764519E5B6DEB9F6950586 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCEC69471C103CD200E16F2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEC69831C103E3300E16F2C /* Robin.xcdatamodeld in Sources */,
 				BCEC69561C103CD200E16F2C /* ViewController.m in Sources */,
+				BCEC69951C10459700E16F2C /* News.m in Sources */,
 				BCEC69531C103CD200E16F2C /* AppDelegate.m in Sources */,
 				BCEC69501C103CD200E16F2C /* main.m in Sources */,
+				BCEC69941C10459700E16F2C /* News+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +502,7 @@
 		};
 		BCEC69791C103CD200E16F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA5EB32FC1370681879F6E3F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CoreData-MagicalRecordDemo/Info.plist";
@@ -422,6 +514,7 @@
 		};
 		BCEC697A1C103CD200E16F2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F53CA7BF52DFF87B9D56EC3C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CoreData-MagicalRecordDemo/Info.plist";
@@ -498,6 +591,7 @@
 				BCEC697A1C103CD200E16F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEC697B1C103CD200E16F2C /* Build configuration list for PBXNativeTarget "CoreData-MagicalRecordDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +600,7 @@
 				BCEC697D1C103CD200E16F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEC697E1C103CD200E16F2C /* Build configuration list for PBXNativeTarget "CoreData-MagicalRecordDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,8 +609,22 @@
 				BCEC69801C103CD200E16F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCEC69811C103E3300E16F2C /* Robin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCEC69821C103E3300E16F2C /* Robin.xcdatamodel */,
+			);
+			currentVersion = BCEC69821C103E3300E16F2C /* Robin.xcdatamodel */;
+			path = Robin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCEC69431C103CD200E16F2C /* Project object */;
 }
